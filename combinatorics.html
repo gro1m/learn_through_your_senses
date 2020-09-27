@@ -5,6 +5,15 @@
         <title>Index</title>
         <link rel="stylesheet" href="css/main.css">
     </head>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script>
+    MathJax = {
+      tex: {
+        tags: 'all'
+      }
+    };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <body>  
     <div class="grid">
         <div class="row">
@@ -14,8 +23,8 @@
                 </h1>
                 <p>
                     Intro Text
-                    <table>
-                        <caption> Formulas:</caption>
+                    <table border = "1" cellpadding = "5" cellspacing = "5">
+                        <caption> Formulas </caption>
                         <tr>
                           <td></td>
                           <th scope="col">Ordered</th>
@@ -23,13 +32,13 @@
                         </tr>
                         <tr>
                           <th scope="row">Without replacement</th>
-                          <td align="center"> A </td>
-                          <td align="center"> B </td>
+                          <td align="center"> \(\frac{n!}{(n-k)!}\)</td>
+                          <td align="center"> \(\binom{n}{k}\) </td>
                         </tr>
                         <tr>
                           <th scope="row">With replacement </th>
-                          <td align="center"> C </td>
-                          <td align="center"> D </td>
+                          <td align="center"> \(n^k\) </td>
+                          <td align="center"> \(\binom{n+k-1}{k}\) </td>
                         </tr>
                       </table>  
                 </p>
