@@ -4,6 +4,36 @@
 }
 */
 
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    text-align: left;
+    font-size: medium;
+}
+
+figcaption {
+    padding: 10px;
+    caption-side: bottom;
+    text-align: left;
+    font-size: medium;
+}
+
+body {
+    counter-reset: figures;
+    counter-reset: tables;
+  }
+
+
+figcaption::before {
+      counter-increment: figures;
+      content: "Figure " counter(figures) ": ";
+}
+  
+caption::before {
+      counter-increment: tables;
+      content: "Table " counter(tables) ": ";
+}
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
