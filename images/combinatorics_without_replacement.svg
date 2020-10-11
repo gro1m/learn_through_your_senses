@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="240.76mm" height="71.657mm" version="1.1" viewBox="0 0 240.76 71.657" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <marker id="marker1383" overflow="visible" orient="auto">
+   <path transform="matrix(-.3 0 0 -.3 .69 0)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="Arrow2Send" overflow="visible" orient="auto">
+   <path transform="matrix(-.3 0 0 -.3 .69 0)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="Arrow2Send-4" overflow="visible" orient="auto">
+   <path transform="matrix(-.3 0 0 -.3 .69 0)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="marker1383-4" overflow="visible" orient="auto">
+   <path transform="matrix(-.3 0 0 -.3 .69 0)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="marker1383-4-1" overflow="visible" orient="auto">
+   <path transform="matrix(-.3 0 0 -.3 .69 0)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="Arrow2Send-4-5" overflow="visible" orient="auto">
+   <path transform="matrix(-.3 0 0 -.3 .69 0)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+ </defs>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-21.778 -99.032)">
+  <g>
+   <path d="m59.098 101a16.458 22.822 0 0 1-8.2288 19.764 16.458 22.822 0 0 1-16.458 0 16.458 22.822 0 0 1-8.2288-19.764" fill="#fff100" fill-rule="evenodd" stroke="#000" stroke-width=".67896"/>
+   <circle cx="36.187" cy="114.89" r="3.6211" fill="#fff100" stroke="#000" stroke-width=".69774"/>
+   <text x="54.226482" y="50.035065" fill="#000000" font-family="sans-serif" font-size="10.583px" stroke-width=".26458" style="line-height:1.25" xml:space="preserve"><tspan x="54.226482" y="50.035065" font-size="5.2917px" stroke-width=".26458"/></text>
+   <text x="34.526649" y="116.38129" fill="#000000" font-family="sans-serif" font-size="4.9229px" stroke-width=".18461" style="line-height:1.25" xml:space="preserve"><tspan x="34.526649" y="116.38129" font-size="4.923px" stroke-width=".18461">1</tspan></text>
+   <circle id="use887" cx="43.786" cy="118.83" r="3.6211" fill="#fff100" stroke="#000" stroke-width=".69774"/>
+   <text id="use889" x="42.126385" y="120.32189" fill="#000000" font-family="sans-serif" font-size="4.9229px" stroke-width=".18461" style="line-height:1.25" xml:space="preserve"><tspan x="42.126385" y="120.32189" font-size="4.923px" stroke-width=".18461">3</tspan></text>
+   <text x="84.628601" y="49.391041" fill="#000000" font-family="sans-serif" font-size="4.9229px" stroke-width=".18461" style="line-height:1.25" xml:space="preserve"><tspan x="84.628601" y="49.391041" font-size="4.923px" stroke-width=".18461"/></text>
+   <circle cx="33.372" cy="106.16" r="3.6211" fill="#fff100" stroke="#000" stroke-width=".69774"/>
+   <text x="31.711935" y="107.65567" fill="#000000" font-family="sans-serif" font-size="4.9229px" stroke-width=".18461" style="line-height:1.25" xml:space="preserve"><tspan x="31.711935" y="107.65567" font-size="4.923px" stroke-width=".18461">4</tspan></text>
+   <circle cx="51.471" cy="112.99" r="3.6211" fill="#fff100" stroke="#000" stroke-width=".69774"/>
+   <text x="41.844913" y="70.782883" fill="#000000" font-family="sans-serif" font-size="4.9229px" stroke-width=".18461" style="line-height:1.25" xml:space="preserve"><tspan x="41.844913" y="70.782883" font-size="4.923px" stroke-width=".18461"/></text>
+   <text x="49.776783" y="114.6418" fill="#000000" font-family="sans-serif" font-size="4.9229px" stroke-width=".18461" style="line-height:1.25" xml:space="preserve"><tspan x="49.776783" y="114.6418" font-size="4.923px" stroke-width=".18461">5</tspan></text>
+   <circle id="use913" cx="52.934" cy="103.85" r="3.6211" fill="#fff100" stroke="#000" stroke-width=".69774"/>
+   <text x="51.274212" y="105.34197" fill="#000000" font-family="sans-serif" font-size="4.9229px" stroke-width=".18461" style="line-height:1.25" xml:space="preserve"><tspan x="51.274212" y="105.34197" font-size="4.923px" stroke-width=".18461">6</tspan></text>
+  </g>
+  <use transform="translate(-9.525 4.4979)" width="100%" height="100%" xlink:href="#use913"/>
+  <text x="42.013786" y="110.10447" fill="#000000" font-family="sans-serif" font-size="4.9229px" stroke-width=".18461" style="line-height:1.25" xml:space="preserve"><tspan x="42.013786" y="110.10447" font-size="4.923px" stroke-width=".18461">2</tspan></text>
+  <path d="m42.862 131.5v24.342" fill="none" marker-end="url(#Arrow2Send)" stroke="#000"/>
+  <use transform="translate(-.79375 47.89)" width="100%" height="100%" xlink:href="#use887"/>
+  <use transform="translate(-.79375 47.89)" width="100%" height="100%" xlink:href="#use889"/>
+  <path d="m61.739 111.35c16.202-0.0399 16.562-0.0407 16.562-0.0407" fill="none" marker-end="url(#marker1383)" stroke="#000" stroke-width=".9184"/>
+  <g>
+   <text x="69.260887" y="117.47501" fill="#000000" font-family="sans-serif" font-size="4.9389px" stroke-width=".26458" text-align="center" text-anchor="middle" style="line-height:0.65" xml:space="preserve"><tspan x="69.260887" y="117.47501" text-align="center">n-1 </tspan><tspan x="69.260887" y="124.35416" text-align="center">balls left</tspan></text>
+   <text x="30.60169" y="142.08125" fill="#000000" font-family="sans-serif" font-size="4.9389px" stroke-width=".26458" text-anchor="middle" style="line-height:0.65" xml:space="preserve"><tspan x="30.60169" y="142.08125" text-align="center">n </tspan><tspan x="30.60169" y="148.9604" text-align="center">choices</tspan></text>
+   <path d="m123.41 100.65a16.458 22.822 0 0 1-8.2288 19.764 16.458 22.822 0 0 1-16.458 0 16.458 22.822 0 0 1-8.2288-19.764" fill="#fff100" fill-rule="evenodd" stroke="#000" stroke-width=".67896"/>
+   <circle cx="107.12" cy="119.04" r="3.6211" fill="#fff100" stroke="#000" stroke-width=".69774"/>
+   <text x="105.45632" y="120.5316" fill="#000000" font-family="sans-serif" font-size="4.9229px" stroke-width=".18461" style="line-height:1.25" xml:space="preserve"><tspan x="105.45632" y="120.5316" font-size="4.9229px" stroke-width=".18461">1</tspan></text>
+   <circle cx="99.274" cy="113.49" r="3.6211" fill="#fff100" stroke="#000" stroke-width=".69774"/>
+   <text x="97.614525" y="114.98099" fill="#000000" font-family="sans-serif" font-size="4.9229px" stroke-width=".18461" style="line-height:1.25" xml:space="preserve"><tspan x="97.614525" y="114.98099" font-size="4.9229px" stroke-width=".18461">4</tspan></text>
+   <circle cx="115.52" cy="114.76" r="3.6211" fill="#fff100" stroke="#000" stroke-width=".69774"/>
+   <text x="113.82729" y="116.41087" fill="#000000" font-family="sans-serif" font-size="4.9229px" stroke-width=".18461" style="line-height:1.25" xml:space="preserve"><tspan x="113.82729" y="116.41087" font-size="4.9229px" stroke-width=".18461">5</tspan></text>
+   <circle id="use913-7" cx="117.78" cy="105.88" r="3.6211" fill="#fff100" stroke="#000" stroke-width=".69774"/>
+   <text x="116.11847" y="107.37562" fill="#000000" font-family="sans-serif" font-size="4.9229px" stroke-width=".18461" style="line-height:1.25" xml:space="preserve"><tspan x="116.11847" y="107.37562" font-size="4.9229px" stroke-width=".18461">6</tspan></text>
+  </g>
+  <use transform="translate(-10.319 5.2917)" width="100%" height="100%" xlink:href="#use913-7"/>
+  <text x="106.06429" y="112.93187" fill="#000000" font-family="sans-serif" font-size="4.9229px" stroke-width=".18461" style="line-height:1.25" xml:space="preserve"><tspan x="106.06429" y="112.93187" font-size="4.9229px" stroke-width=".18461">2</tspan></text>
+  <path d="m107.18 131.15v24.342" fill="none" marker-end="url(#Arrow2Send-4)" stroke="#000"/>
+  <circle cx="107.31" cy="166.37" r="3.6211" fill="#fff100" stroke="#000" stroke-width=".69774"/>
+  <text x="105.64772" y="167.86388" fill="#000000" font-family="sans-serif" font-size="4.9229px" stroke-width=".18461" style="line-height:1.25" xml:space="preserve"><tspan x="105.64772" y="167.86388" font-size="4.9229px" stroke-width=".18461">1</tspan></text>
+  <path d="m125.83 110.99c23.703-0.0323 24.229-0.033 24.229-0.033" fill="none" marker-end="url(#marker1383-4)" stroke="#000"/>
+  <g fill="#000000" font-family="sans-serif" stroke-width=".26458">
+   <text x="137.01556" y="117.12741" font-size="4.9389px" text-align="center" text-anchor="middle" style="line-height:0.65" xml:space="preserve"><tspan x="137.01556" y="117.12741" text-align="center">n-2 </tspan><tspan x="137.01556" y="124.00655" text-align="center">balls left</tspan></text>
+   <text x="94.916779" y="141.73366" font-size="4.9389px" text-anchor="middle" style="line-height:0.65" xml:space="preserve"><tspan x="94.916779" y="141.73366" text-align="center">n-1 </tspan><tspan x="94.916779" y="148.61281" text-align="center">choices</tspan></text>
+   <text x="156.89792" y="111.91875" font-size="10.583px" style="line-height:1.25" xml:space="preserve"><tspan x="156.89792" y="111.91875" stroke-width=".26458">...</tspan></text>
+  </g>
+  <path d="m175.55 110.8c23.703-0.0323 24.229-0.033 24.229-0.033" fill="none" marker-end="url(#marker1383-4-1)" stroke="#000"/>
+  <g>
+   <text x="186.73387" y="116.93993" fill="#000000" font-family="sans-serif" font-size="4.9389px" stroke-width=".26458" text-align="center" text-anchor="middle" style="line-height:0.65" xml:space="preserve"><tspan x="186.73387" y="116.93993" text-align="center">n-(k-1) </tspan><tspan x="186.73387" y="123.81908" text-align="center">balls left</tspan></text>
+   <text fill="#000000" font-family="sans-serif" font-size="10.583px" style="line-height:1.25;shape-inside:url(#rect127);white-space:pre" xml:space="preserve"/>
+   <path d="m238.51 99.032a16.458 22.822 0 0 1-8.2288 19.764 16.458 22.822 0 0 1-16.458 0 16.458 22.822 0 0 1-8.2288-19.764" fill="#fff100" fill-rule="evenodd" stroke="#000" stroke-width=".67896"/>
+   <circle cx="215.43" cy="113.2" r="3.6211" fill="#fff100" stroke="#000" stroke-width=".69774"/>
+   <text x="213.7666" y="114.68753" fill="#000000" font-family="sans-serif" font-size="4.9229px" stroke-width=".18461" style="line-height:1.25" xml:space="preserve"><tspan x="213.7666" y="114.68753" font-size="4.9229px" stroke-width=".18461">4</tspan></text>
+   <circle cx="223.74" cy="117.37" r="3.6211" fill="#fff100" stroke="#000" stroke-width=".69774"/>
+   <text x="222.04187" y="119.02785" fill="#000000" font-family="sans-serif" font-size="4.9229px" stroke-width=".18461" style="line-height:1.25" xml:space="preserve"><tspan x="222.04187" y="119.02785" font-size="4.9229px" stroke-width=".18461">5</tspan></text>
+   <circle cx="230.76" cy="110.62" r="3.6211" fill="#fff100" stroke="#000" stroke-width=".69774"/>
+   <text x="229.09555" y="112.10927" fill="#000000" font-family="sans-serif" font-size="4.9229px" stroke-width=".18461" style="line-height:1.25" xml:space="preserve"><tspan x="229.09555" y="112.10927" font-size="4.9229px" stroke-width=".18461">6</tspan></text>
+  </g>
+  <path d="m222.27 129.53v24.342" fill="none" marker-end="url(#Arrow2Send-4-5)" stroke="#000"/>
+  <circle cx="222.4" cy="164.76" r="3.6211" fill="#fff100" stroke="#000" stroke-width=".69774"/>
+  <g fill="#000000" font-family="sans-serif">
+   <text x="220.74147" y="166.24751" font-size="4.9229px" stroke-width=".18461" style="line-height:1.25" xml:space="preserve"><tspan x="220.74147" y="166.24751" font-size="4.9229px" stroke-width=".18461">5</tspan></text>
+   <text x="252.10931" y="115.51105" font-size="4.9389px" stroke-width=".26458" text-align="center" text-anchor="middle" style="line-height:0.65" xml:space="preserve"><tspan x="252.10931" y="115.51105" text-align="center">n-k </tspan><tspan x="252.10931" y="122.39019" text-align="center">balls left</tspan></text>
+   <text x="210.01053" y="140.11729" font-size="4.9389px" stroke-width=".26458" text-anchor="middle" style="line-height:0.65" xml:space="preserve"><tspan x="210.01053" y="140.11729" text-align="center">n-(k-1) </tspan><tspan x="210.01053" y="146.99644" text-align="center">choices</tspan></text>
+  </g>
+ </g>
+</svg>
