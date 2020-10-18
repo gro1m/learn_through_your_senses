@@ -73,14 +73,32 @@
                 <h1>
                     Draws with replacement
                 </h1>
+                <p>
+                    Here the same item can be drawn multiple times.
+                </p>
                 <h2>
                     Ordered Draw with replacement 
                 </h2>
+                <p>
+                    This case is rather simple, as in every draw n balls are available and so the amount of different draws is:
+                    <p>
+                        \(n^k\).
+                    </p>
+                </p>
                 <h2>
                     Unordered Draw with replacement
                 </h2>
                 <p>
-                    Unordered Draw with replacmenet text
+                    In case the draw is unordered, one can obtain a formula by using an analogy (which essentially tries to refer to the case without replacement), which  I want to explain with the help of the following figure:
+                </p>
+                <img src="images/unordered_with_replacement.svg" alt="Example photo (maybe replaced once with a personal photo)">
+                <p>
+                    Imagine you have k buckets to place your marbles into and you also have at least k objects of each kind of marble.
+                    As the order does not count, you can imagine that you have a slider or separator for each kind of marble: for \(n\) marbles you need \(n-1\) separations.
+                    Now each unique arrangement will have different slider positions. In principle, each slider has k positions to select from. Here comes the crux: As multiple sliders can occupy the same position, the positions you draw from equals the number of buckets plus the number of sliders = \(k+(n-1)\). We have to place \(n-1\) sliders, therefore the number of arrangements are:
+                    <p>
+                        \(\binom{k+(n-1)}{n-1} = \binom{k+(n-1)}{k}\).
+                    </p>
                 </p>
             </div>
         </div>
