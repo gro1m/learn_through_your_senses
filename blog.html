@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Blog</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/blog.css">
 </head>
 
 <body>
@@ -12,19 +12,37 @@
         <header>
             <h1>My Blogs...</h1>
         </header>
-        <div class="grid">
-            <div class="row">
-                <div class="col-4">
-                    <a href="combinatorics.html" class="button">Combinatorics</a>
-                </div>
-                <div class="col-4">
-                    Column 2
-                </div>
-                <div class="col-4">
-                    Column 3
-                </div>
-            </div>
-        </div>
+        <!-- COPIED FROM https://css-tricks.com/targetting-menu-elements-submenus-navigation-bar/ -->
+        <nav>
+            <ul class="nav">
+                <li><a href="#">Probability Theory and Statistics</a>
+                    <ul>
+                        <li>
+                            <a href="combinatorics.html" class="button">
+                                Combinatorics
+                            </a>
+                        </li>
+                        <li><a href="#">item</a></li>
+                        <li><a href="#">item</a></li>
+                        <li><a href="#">item</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Machine Learning</a>
+                    <ul>
+                        <li><a href="#">Principles</a></li>
+                        <li><a href="#">Deep Learning</a>
+                            <ul>
+                                <li><a href="#">Convolutional Neural Networks</a></li>
+                                <li><a href="#">Long Short-Term Memory</a></li>
+                                <li><a href="#">Generative Adversarial Neural Networks</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Reinforcement Learning</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Calculus</a></li>
+            </ul>
+        </nav>
     </main>
 </body>
 
