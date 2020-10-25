@@ -9,50 +9,42 @@
 
 <body>
     <main>
-        <header>
-            <h1>My Blogs...</h1>
-        </header>
-        <!-- COPIED FROM https://css-tricks.com/targetting-menu-elements-submenus-navigation-bar/ -->
         <nav>
-            <ul class="nav">
-                <li><a href="#">Probability Theory and Statistics</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu" id="nav-icon">&#9776; My Blogs...</label>
+            <div class="nav-main">
+                <div class="nav-item">
+                    <input type="checkbox" id="prob" />
+                    <img src="images/Arrow.png" class="arrow"><label for="prob">Probability Theory and
+                        Statistics</label>
                     <ul>
-                        <li>
-                            <a href="combinatorics.html" class="button">
-                                Combinatorics
-                            </a>
-                        </li>
-                        <li><a href="#">item</a></li>
-                        <li><a href="#">item</a></li>
-                        <li><a href="#">item</a></li>
+                        <li><a href="combinatorics.html" class="button">Combinatorics</a></li>
+                        <li><a href="#prob">item</a></li>
+                        <li><a href="#prob">item</a></li>
+                        <li><a href="#prob">item</a></li>
                     </ul>
-                </li>
-                <li><a href="#">Machine Learning</a>
+                </div>
+                <div class="nav-item">
+                    <input type="checkbox" id="ml" />
+                    <img src="images/Arrow.png" class="arrow"><label for="ml">Machine Learning</label>
+
                     <ul>
-                        <li>
-                            <a href="#">Principles</a>
-                        </li>
-                        <li>
-                            <a href="#">Deep Learning</a>
+                        <li><a href="#ml">Principles</a></li>
+                        <li> <a href="#ml">Deep Learning</a>
                             <ul>
-                                <li>
-                                    <a href="#">Convolutional Neural Networks</a>
-                                </li>
-                                <li>
-                                    <a href="#">Long Short-Term Memory</a>
-                                </li>
-                                <li>
-                                    <a href="#">Generative Adversarial Neural Networks</a>
-                                </li>
+                                <li><a href="#ml">Convolutional Neural Networks</a></li>
+                                <li><a href="#ml">Long Short-Term Memory</a></li>
+                                <li><a href="#ml">Generative Adversarial Neural Networks</a></li>
                             </ul>
                         </li>
-                        <li>
-                            <a href="#">Reinforcement Learning</a>
-                        </li>
+                        <li><a href="#ml">Reinforcement Learning</a></li>
                     </ul>
-                </li>
-                <li><a href="#">Calculus</a></li>
-            </ul>
+                </div>
+                <div class="nav-item">
+                    <input type="checkbox" id="calc" />
+                    <img src="images/Arrow.png" class="arrow"><label for="calc">Calculus</label>
+                </div>
+            </div>
         </nav>
     </main>
 </body>
