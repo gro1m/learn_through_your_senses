@@ -27,6 +27,15 @@ html, body {
   margin: 17px 1em 0 2em;
 }
 
+.arrow-ul {
+  width: 12px;
+  height: 12px;
+  vertical-align: middle;
+  float: left;
+  z-index: 0;
+  margin: 17px 1em 0 4em;
+}
+
 .nav-item input + .arrow {
   transform: rotate(-90deg);
   transition: 0.1s;
@@ -35,6 +44,18 @@ html, body {
 .nav-item input:checked + .arrow {
   transform: rotate(0deg);
   transition: 0.1s;
+}
+
+.nav-item input + .arrow-ul {
+  transform: rotate(-90deg);
+  transition: 0.1s;
+  right: 5px;
+}
+
+.nav-item input:checked + .arrow-ul {
+  transform: rotate(0deg);
+  transition: 0.1s;
+  right: 5px;
 }
 
 /*Styles*/
