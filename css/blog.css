@@ -1,0 +1,111 @@
+/*Global*/
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: helvetica, sans-serif;
+}
+
+/*Func*/
+.nav-main, .nav-item ul, nav input[type="checkbox"] {
+  display: none;
+}
+
+
+#menu:checked ~ .nav-main, .nav-item input:checked ~ ul {
+  display: block;
+}
+
+/*Arrow*/
+
+.arrow {
+  width: 12px;
+  height: 12px;
+  vertical-align: middle;
+  float: left;
+  z-index: 0;
+  margin: 17px 1em 0 2em;
+}
+
+.arrow-ul {
+  width: 12px;
+  height: 12px;
+  vertical-align: middle;
+  float: left;
+  z-index: 0;
+  margin: 17px 1em 0 4em;
+}
+
+.nav-item input + .arrow {
+  transform: rotate(-90deg);
+  transition: 0.1s;
+}
+
+.nav-item input:checked + .arrow {
+  transform: rotate(0deg);
+  transition: 0.1s;
+}
+
+.nav-item input + .arrow-ul {
+  transform: rotate(-90deg);
+  transition: 0.1s;
+  right: 5px;
+}
+
+.nav-item input:checked + .arrow-ul {
+  transform: rotate(0deg);
+  transition: 0.1s;
+  right: 5px;
+}
+
+/*Styles*/
+label:hover {
+  cursor: pointer;
+}
+
+label {
+  width: 100%;
+  display: block;
+  z-index: 3;
+  position: relative;
+}
+
+.nav-main {
+  width: 100%;
+  background-color: white;
+  overflow-x: hidden;
+  border-bottom: 1px solid #CFD8DC;
+}
+
+#nav-icon {
+  font-size: 28px;
+  line-height: 50px;
+  padding-left: 1em;
+  color: rgb(15, 15, 15);
+  background-color: #f49b36;
+}
+
+.nav-main ul, .nav-main li, label {
+  line-height: 50px;
+  margin: 0;
+  padding: 0 2em;
+  list-style: none;
+  text-decoration: none;
+  color: #90A4AE;
+  font-weight: 100;
+  width: 100%;
+}
+
+.nav-item ul {
+  padding: 0 0.25em;
+}
+
+.nav-main li a {
+  line-height: 50px;
+  margin: 0;
+  padding: 0 4em;
+  list-style: none;
+  text-decoration: none;
+  color: #90A4AE;
+  font-weight: 100;
+}
