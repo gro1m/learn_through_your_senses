@@ -4,6 +4,15 @@
 }
 */
 
+
+.left, .right {
+    display: inline-block;
+}
+
+.container {
+    display: flex
+}
+
 caption {
     padding: 10px;
     caption-side: bottom;
@@ -19,19 +28,26 @@ figcaption {
 }
 
 body {
-    counter-reset: figures;
-    counter-reset: tables;
-  }
+    counter-reset: figure 1;
+    counter-reset: tables 1;
+    /* Set "my-sec-counter" to 0 */
+    counter-reset: my-sec-counter 1;
+}
 
+h2::before {
+    /* Increment "my-sec-counter" by 1 */
+    counter-increment: my-sec-counter;
+    content: counter(my-sec-counter) ". ";
+}
 
 figcaption::before {
-      counter-increment: figures;
-      content: "Figure " counter(figures) ": ";
+    counter-increment: figure;
+    content: 'Fig. ' counter(figure) ' : ';
 }
-  
+
 caption::before {
-      counter-increment: tables;
-      content: "Table " counter(tables) ": ";
+    counter-increment: tables;
+    content: "Table " counter(tables) ": ";
 }
 
 * {
@@ -101,7 +117,6 @@ caption::before {
     width: 100%;
 }
 
-
 h1 {
     color: green
 }
@@ -115,14 +130,17 @@ h1 {
     align-items: center;
     text-align: center;
 }
+
 .separator::before, .separator::after {
     content: '';
     flex: 1;
     border-bottom: 1px solid #000;
 }
+
 .separator::before {
     margin-right: .25em;
 }
+
 .separator::after {
     margin-left: .25em;
 }
