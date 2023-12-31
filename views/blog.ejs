@@ -1,68 +1,45 @@
 <%- layout('layouts/blogs.ejs')%>
-<main>
-    <nav>
-        <input type="checkbox" id="menu" />
-        <label for="menu" id="nav-icon">&#9776; My Blogs...</label>
-        <div class="nav-main">
-            <div class="nav-item">
-                <input type="checkbox" id="prob" />
-                <img src="/images/Arrow.png" class="arrow"><label for="prob">Probability Theory and
-                    Statistics</label>
-                <ul>
-                    <li>
-                        <a href="/combinatorics">Combinatorics</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="nav-item">
-                <input type="checkbox" id="ml" />
-                <img src="/images/Arrow.png" class="arrow"><label for="ml">Machine Learning</label>
-
-                <ul>
-                    <li><a href="#ml">Principles</a></li>
-                    <input type="checkbox" id="dl" />
-                    <img src="/images/Arrow.png" class="arrow-ul"><label for="dl">Deep Learning</label>
+    <main>
+        <nav>
+            <input type="checkbox" id="menu" />
+            <label for="menu" id="nav-icon">&#9776; My Blogs...</label>
+            <div class="nav-main">
+                <div class="nav-item">
+                    <input type="checkbox" id="prob" />
+                    <img src="/images/Arrow.png" class="arrow"><label for="prob">Probability Theory and
+                        Statistics</label>
+                    <ul>
+                        <li>
+                            <a href="/combinatorics">Combinatorics</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-item">
+                    <input type="checkbox" id="ml" />
+                    <img src="/images/Arrow.png" class="arrow"><label for="ml">Machine Learning</label>
+                    <ul>
+                        <input type="checkbox" id="dl" />
+                        <img src="/images/Arrow.png" class="arrow-ul"><label for="dl">Deep Learning</label>
                         <ul>
-                            <li><a href="#dl">Convolutional Neural Networks</a></li>
-                            <li><a href="/lstm">Long Short-Term Memory</ahref="></li>
-                            <li><a href="#dl">Generative Adversarial Neural Networks</a></li>
+                            <li><a href="/lstm">Long Short-Term Memory</a>
+                            </li>
                         </ul>
-                    </li>
-                    <li><a href="#ml">Reinforcement Learning</a></li>
-                </ul>
-            </div>
-            <div class="nav-item">
-                <input type="checkbox" id="calc" />
-                <img src="/images/Arrow.png" class="arrow"><label for="calc">Calculus</label>
-            </div>
-            <div class="nav-item">
-                <input type="checkbox" id="comp" />
-                <img src="../images/Arrow.png" class="arrow"><label for="comp">Computing</label>
-                <ul>
-                    <input type="checkbox" id="build_computer" />
-                    <img src="/images/Arrow.png" class="arrow-ul"><label for="build_computer">Build a Computer</label>
-                    <ul>
-                        <li><a href="/build_computer_intro" class="button">Introduction</li>
+                        </li>
                     </ul>
-                    <li><a href="#pl">Infrastructure as Code</a></li>
-                </ul>
-            </div>
-            <div class="nav-item">
-                <input type="checkbox" id="pl" />
-                <img src="/images/Arrow.png" class="arrow"><label for="pl">Programming</label>
-                <ul>
-                    <input type="checkbox" id="langs" />
-                    <img src="/images/Arrow.png" class="arrow-ul"><label for="langs">Languages</label>
+                </div>
+                <div class="nav-item">
+                    <input type="checkbox" id="comp" />
+                    <img src="/images/Arrow.png" class="arrow"><label for="comp">Computing</label>
                     <ul>
-                        <li><a href="#langs">C</a></li>
-                        <li><a href="#langs">C++</a></li>
-                        <li><a href="#langs">Python</a></li>
-                        <li><a href="#langs">Java</a></li>
-                        <li><a href="#langs">R</a></li>
+                        <input type="checkbox" id="build_computer_intro" />
+                        <img src="/images/Arrow.png" class="arrow-ul"><label for="build_computer_intro">Build 8-bit Computer</label>
+                        <ul>
+                            <li><a href="/build_computer_intro">Introduction</a>
+                            </li>
+                        </ul>
+                        </li>
                     </ul>
-                    <li><a href="#pl">Infrastructure as Code</a></li>
-                </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-</main>
+        </nav>
+    </main>
