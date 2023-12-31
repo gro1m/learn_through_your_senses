@@ -4,6 +4,9 @@ const ejsMate = require('ejs-mate');
 const path = require('path');
 
 // Import Routes
+const computerRoutes = require('./routes/computer');
+const mainRoutes = require('./routes/main');
+const mathRoutes = require('./routes/math');
 const mlRoutes = require('./routes/machine_learning');
 
 // App Configuration
@@ -19,27 +22,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')))
 
 // Routes
-
-app.get('/', (req, res) => {
-    res.render('index');
-});
-
-app.get('/about_me', (req, res) => {
-    res.render('about_me');
-});
-
-app.get('/blog', (req, res) => {
-    res.render('blog');
-});
-
-app.get('/build_computer_intro', (req, res) => {
-    res.render('build_computer_intro');
-});
-
-app.get('/combinatorics', (req, res) => {
-    res.render('combinatorics');
-});
-
+app.use('/', mainRoutes);
+app.use('/', computerRoutes);
+app.use('/', mathRoutes);
 app.use('/', mlRoutes);
 
 // Listen on port 3000
