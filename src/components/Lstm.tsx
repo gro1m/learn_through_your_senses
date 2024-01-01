@@ -11,7 +11,7 @@ export default function Lstm() {
     <>
       <h1>LSTM neuron</h1>
       <p>
-        <img src={lstm1Image} alt="LSTM neuron explicit version" />
+        <img src={lstm1Image} alt="LSTM neuron explicit version" width="70%" height="70%"/>
       </p>
       <p>
         Using
@@ -22,7 +22,7 @@ export default function Lstm() {
         </MathJax>
         , the diagram can be simplified to:
         <p>
-          <img src={lstm2Image} alt="LSTM neuron more summarized version" />
+          <img src={lstm2Image} alt="LSTM neuron more summarized version" width="70%" height="70%" />
         </p>
       </p>
       <ul>
@@ -37,7 +37,7 @@ export default function Lstm() {
       A simplified and summarized schematic of the diagram above with the
       notation as just introduced, reads as:
       <p>
-        <img src={lstm3Image} alt="LSTM summarized version" />
+        <img src={lstm3Image} alt="LSTM summarized version" width="70%" height="70%"/>
       </p>
       <h2>Formulas</h2>
       <p>
@@ -103,7 +103,7 @@ export default function Lstm() {
       Combines LSTM's forget gate and learn gate into an update gate and then
       runs this through a combine gate.
       <p>
-        <img src={gruImage} alt="Gated Recurrent Unit" />
+        <img src={gruImage} alt="Gated Recurrent Unit" width="70%" height="70%"/>
       </p>
       <h2>Character-wise LSTM</h2>
       In the following, <MathJax>{"\\(\\ell \\in \\{1,2\\}\\)"}</MathJax> will
@@ -125,20 +125,19 @@ export default function Lstm() {
         </li>
         <li>
           {" "}
-          <MathJax>{"\\(L_\\ell\\): number of hidden nodes in layer"}</MathJax>
-          \(\ell\) per gate.
+          <MathJax>{"\\(L_\\ell\\): number of hidden nodes in layer \\(\\ell\\) per gate."}</MathJax>
         </li>
         <li>
-          <MathJax>{"\\(W_f^\\ell\\): weights of <i>forget</i> gate layer \\(\\ell\\)."}</MathJax>
+          <MathJax>{"\\(W_f^\\ell\\): weights of \\(\\textit{forget}\\) gate layer \\(\\ell\\)."}</MathJax>
         </li>
         <li>
-          <MathJax>{"\\(W_n^\\ell\\): weights of <i>new</i> gate in layer \\(\\ell\\)."}</MathJax>
+          <MathJax>{"\\(W_n^\\ell\\): weights of \\(\\textit{new}\\) gate in layer \\(\\ell\\)."}</MathJax>
         </li>
         <li>
-          <MathJax>{"\\(W_i^\\ell\\): weights of <i>input</i> gate in layer \\(\\ell\\)."}</MathJax> 
+          <MathJax>{"\\(W_i^\\ell\\): weights of \\(\\textit{input}\\) gate in layer \\(\\ell\\)."}</MathJax> 
         </li>
         <li>
-          <MathJax>{"\\(W_o^\\ell\\): weights of <i>output</i> gate in layer \\(\\ell\\)."}</MathJax>
+          <MathJax>{"\\(W_o^\\ell\\): weights of \\(\\textit{output}\\) gate in layer \\(\\ell\\)."}</MathJax>
         </li>
         <li>
           <MathJax>{"\\(x_t\\): input at time \\(t\\)."}</MathJax>
@@ -155,9 +154,9 @@ export default function Lstm() {
       </ul>
       Inferred measures:
       <ul>
-        <li>number of characters per batch = <MathJax>\\(N \\cdot M\\)</MathJax></li>
+        <li><MathJax>{"number of characters per batch = \\(N \\cdot M\\)"}</MathJax></li>
         <li>
-          hidden state tensor output size in layer <MathJax>{"\\(k = N \\cdot M \\cdot L_k\\)"}</MathJax>
+        <MathJax>{"hidden state tensor output size in layer \\(k = N \\cdot M \\cdot L_k\\)"}</MathJax>
         </li>
       </ul>
       Important note:
@@ -170,11 +169,11 @@ export default function Lstm() {
       <p>
         <img
           src={lstmprocess1Image}
-          alt="Characterwise LSTM 2layer full part 1"
+          alt="Characterwise LSTM 2layer full part 1" width="70%" height="70%"
         />
         <img
           src={lstmprocess2Image}
-          alt="Characterwise LSTM 2layer full part 2"
+          alt="Characterwise LSTM 2layer full part 2" width="70%" height="70%"
         />
       </p>
     </>

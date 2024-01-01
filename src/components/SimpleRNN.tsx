@@ -11,13 +11,13 @@ export default function SimpleRNN() {
   return (
     <>
       <h1>Simple RNN</h1>
-      <img src={simplernnImage} alt="Elman network: Simple RNN" />
+      <img src={simplernnImage} alt="Elman network: Simple RNN" width="70%" height="70%"/>
       <h2>State Machine Analogy</h2>
-      <img src={smanalogyImage} alt="State Machine Analogy for simple RNN" />
+      <img src={smanalogyImage} alt="State Machine Analogy for simple RNN" width="70%" height="70%" />
       <h2>RNN model</h2>
-      <img src={rnnmodelImage} alt="Folded and unfolded RNN" />
+      <img src={rnnmodelImage} alt="Folded and unfolded RNN" width="70%" height="70%"/>
       <h2>RNN example</h2>
-      <img src={rnnexampleImage} alt="Example: Many-to-One" />
+      <img src={rnnexampleImage} alt="Example: Many-to-One" width="70%" height="70%" />
       <h1>Training RNNs: Backpropagation through Time (BPTT)</h1>
       <p>
         Most popular loss functions:
@@ -55,7 +55,7 @@ export default function SimpleRNN() {
         </ul>
       </p>
       <h2>Unfolded RNN model for first 3 timesteps</h2>
-      <img src={bpttrnnImage} alt="Unfolded RNN for the first 3 timesteps" />
+      <img src={bpttrnnImage} alt="Unfolded RNN for the first 3 timesteps" width="70%" height="70%"/>
       <h3>
       <MathJax>{"Update weight matrices \\(W_y, W_s\\) and \\(W_x\\) at time \\(t=3\\)"}</MathJax>
       </h3>
@@ -131,7 +131,7 @@ export default function SimpleRNN() {
         used, i.e. weight update at timestep
         <MathJax>
           {
-            "\\(t: \\delta = \\begin{cases} \\dfrac{\\partial y}{\\partial W_{ij}} & \\dfrac{\\partial y}{\\partial W_{ij}} leq threshold \\\\dfrac{\\dfrac{\\partial y}{\\partial W_{ij}}}{\\left\\lVert \\dfrac{\\partial y}{\\partial W_{ij}} \\right\\rVert_2} & \\dfrac{\\partial y}{\\partial W_{ij}} > threshold \\end{cases}\\)"
+            "\\(t: \\delta = \\begin{cases} \\dfrac{\\partial y}{\\partial W_{ij}} & \\dfrac{\\partial y}{\\partial W_{ij}} \\leq threshold \\\\ \\dfrac{\\dfrac{\\partial y}{\\partial W_{ij}}}{\\left\\lVert \\dfrac{\\partial y}{\\partial W_{ij}} \\right\\rVert_2} & \\dfrac{\\partial y}{\\partial W_{ij}} > threshold \\end{cases}\\)"
           }
         </MathJax>
       </p>
@@ -142,7 +142,7 @@ export default function SimpleRNN() {
           }
         </MathJax>
       </h2>
-      <img src={twolayerrnnImage} alt="example of two layer folded RNN model" />
+      <img src={twolayerrnnImage} alt="example of two layer folded RNN model" width="70%" height="70%"/>
       <p>
         <MathJax>
           {
@@ -151,7 +151,7 @@ export default function SimpleRNN() {
         </MathJax>
       </p>
       <h1>RNN neuron</h1>
-      <img src={rnnneuronImage} alt="RNN neuron" />
+      <img src={rnnneuronImage} alt="RNN neuron" width="70%" height="70%"/>
     </>
   );
 }

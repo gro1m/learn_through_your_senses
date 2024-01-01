@@ -15,12 +15,12 @@ export default function BuildComputerIntro() {
 
             <div className="container">
                 <figure>
-                    <img src={timerImage} alt="Schematics of timer"/>
+                    <img src={timerImage} alt="Schematics of timer" width="100%" height="100%"/>
                     <figcaption> Electronic circuit schematic </figcaption>
                 </figure>
 
                 <figure>
-                    <img src={breadboardcircuitImage} alt="Breadboard circuit"/>
+                    <img src={breadboardcircuitImage} alt="Breadboard circuit" width="100%" height="100%"/>
                     <figcaption>Bread-board circuit</figcaption>
                 </figure>
 
