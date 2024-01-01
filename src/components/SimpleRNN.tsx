@@ -51,35 +51,42 @@ export default function SimpleRNN(){
             }
             </MathJax>
 
-        <h4>Update output weight matrix \\(W_y\\)</h4>
-        \\(\Delta W_y := \\dfrac{\\partial E_3}{\\partial W_y} =   \\dfrac{\\partial E_3}{\\partial \\vec{y}_3} \\dfrac{\\partial \\vec{y}_3}{\\partial W_y}\\)
+        <h4>Update output weight matrix <MathJax>{"\\(W_y\\)"}</MathJax> </h4>
+        <MathJax>
+            {
+            "\\(\Delta W_y := \\dfrac{\\partial E_3}{\\partial W_y} =   \\dfrac{\\partial E_3}{\\partial \\vec{y}_3} \\dfrac{\\partial \\vec{y}_3}{\\partial W_y}\\)"
+            }
+        </MathJax>
+        
 
-        <h4>Update state weight matrix \\(W_s\\)</h4>
-        <p>    \\(\Delta W_s := \\dfrac{\\partial E_3}{\\partial W_s} =   
-            \\dfrac{\\partial E_3}{\\partial \\vec{y}_3}\\dfrac{\\partial \\vec{y}_3}{\\partial \\vec{s}_3} \\dfrac{\\partial \\vec{s}_3}{\\partial W_s} + 
-            \\dfrac{\\partial E_3}{\\partial \\vec{y}_3}\\dfrac{\\partial \\vec{y}_3}{\\partial \\vec{s}_3}\\dfrac{\\partial \\vec{s}_3}{\\partial \\vec{s}_2} \\dfrac{\\partial \\vec{s}_2}{\\partial W_s} +
-            \\dfrac{\\partial E_3}{\\partial \\vec{y}_3}\\dfrac{\\partial \\vec{y}_3}{\\partial \\vec{s}_3}\\dfrac{\\partial \\vec{s}_3}{\\partial \\vec{s}_2} \\dfrac{\\partial \\vec{s}_2}{\\partial \\vec{s}_1} \\dfrac{\\partial \\vec{s}_1}{\\partial W_s}
-            = \\dfrac{\\partial E_3}{\\partial \\vec{y}_3}\\dfrac{\\partial \\vec{y}_3}{\\partial \\vec{s}_3} \\dfrac{\\partial \\vec{s}_3}{\\partial W_s} + 
-            \\dfrac{\\partial E_3}{\\partial \\vec{y}_3}\\dfrac{\\partial \\vec{y}_3}{\\partial \\vec{s}_2} \\dfrac{\\partial \\vec{s}_2}{\\partial W_s} +
-            \\dfrac{\\partial E_3}{\\partial \\vec{y}_3}\\dfrac{\\partial \\vec{y}_3}{\\partial \\vec{s}_2} \\dfrac{\\partial \\vec{s}_2}{\\partial \\vec{s}_1} \\dfrac{\\partial \\vec{s}_1}{\\partial W_s}
-            \\) </p>
-        <p>\\(\Rightarrow\\) <b>General equation for updating \\(W_s\\): </b>
-            \\(\\dfrac{\\partial E_N}{\\partial W_s} = \sum\limits_{i=1}^N \\dfrac{\\partial E_N}{\\partial \\vec{y}_N}\\dfrac{\\partial y_N}{\\partial \\vec{s}_i}\\dfrac{\\partial \\vec{s}_i}{\\partial W_s}\\)
+        <h4>Update state weight matrix <MathJax>{"\\(W_s\\)"}</MathJax></h4>
+        <p><MathJax>
+            {
+                "\\(\Delta W_s := \\dfrac{\\partial E_3}{\\partial W_s} = \\dfrac{\\partial E_3}{\\partial \\vec{y}_3}\\dfrac{\\partial \\vec{y}_3}{\\partial \\vec{s}_3} \\dfrac{\\partial \\vec{s}_3}{\\partial W_s} + \\dfrac{\\partial E_3}{\\partial \\vec{y}_3}\\dfrac{\\partial \\vec{y}_3}{\\partial \\vec{s}_3}\\dfrac{\\partial \\vec{s}_3}{\\partial \\vec{s}_2} \\dfrac{\\partial \\vec{s}_2}{\\partial W_s} +\\dfrac{\\partial E_3}{\\partial \\vec{y}_3}\\dfrac{\\partial \\vec{y}_3}{\\partial \\vec{s}_3}\\dfrac{\\partial \\vec{s}_3}{\\partial \\vec{s}_2} \\dfrac{\\partial \\vec{s}_2}{\\partial \\vec{s}_1} \\dfrac{\\partial \\vec{s}_1}{\\partial W_s}= \\dfrac{\\partial E_3}{\\partial \\vec{y}_3}\\dfrac{\\partial \\vec{y}_3}{\\partial \\vec{s}_3} \\dfrac{\\partial \\vec{s}_3}{\\partial W_s} + \\dfrac{\\partial E_3}{\\partial \\vec{y}_3}\\dfrac{\\partial \\vec{y}_3}{\\partial \\vec{s}_2} \\dfrac{\\partial \\vec{s}_2}{\\partial W_s} +\\dfrac{\\partial E_3}{\\partial \\vec{y}_3}\\dfrac{\\partial \\vec{y}_3}{\\partial \\vec{s}_2} \\dfrac{\\partial \\vec{s}_2}{\\partial \\vec{s}_1} \\dfrac{\\partial \\vec{s}_1}{\\partial W_s}\\) "
+            }
+        </MathJax>
+</p>
+        <p><MathJax>{"\\(\Rightarrow\\)"}</MathJax> <b>General equation for updating <MathJax>{"\\(W_s\\)"}</MathJax>: </b>
+        <MathJax>
+            {
+            "\\(\\dfrac{\\partial E_N}{\\partial W_s} = \sum\limits_{i=1}^N \\dfrac{\\partial E_N}{\\partial \\vec{y}_N}\\dfrac{\\partial y_N}{\\partial \\vec{s}_i}\\dfrac{\\partial \\vec{s}_i}{\\partial W_s}\\)"
+        }
+        </MathJax>
         </p>
 
-        <h4>Update state weight matrix \\(W_x\\)</h4>
-        <p>
-            \\(\Delta W_x := \\dfrac{\\partial E_3}{\\partial W_x} =   
-            \\dfrac{\\partial E_3}{\\partial \\vec{y}_3}\\dfrac{\\partial \\vec{y}_3}{\\partial \\vec{s}_3} \\dfrac{\\partial \\vec{s}_3}{\\partial W_x} + 
-            \\dfrac{\\partial E_3}{\\partial \\vec{y}_3}\\dfrac{\\partial \\vec{y}_3}{\\partial \\vec{s}_3}\\dfrac{\\partial \\vec{s}_3}{\\partial \\vec{s}_2} \\dfrac{\\partial \\vec{s}_2}{\\partial W_x} +
-            \\dfrac{\\partial E_3}{\\partial \\vec{y}_3}\\dfrac{\\partial \\vec{y}_3}{\\partial \\vec{s}_3}\\dfrac{\\partial \\vec{s}_3}{\\partial \\vec{s}_2} \\dfrac{\\partial \\vec{s}_2}{\\partial \\vec{s}_1} \\dfrac{\\partial \\vec{s}_1}{\\partial W_x}
-            = \\dfrac{\\partial E_3}{\\partial \\vec{y}_3}\\dfrac{\\partial \\vec{y}_3}{\\partial \\vec{s}_3} \\dfrac{\\partial \\vec{s}_3}{\\partial W_x} + 
-            \\dfrac{\\partial E_3}{\\partial \\vec{y}_3}\\dfrac{\\partial \\vec{y}_3}{\\partial \\vec{s}_2} \\dfrac{\\partial \\vec{s}_2}{\\partial W_x} +
-            \\dfrac{\\partial E_3}{\\partial \\vec{y}_3}\\dfrac{\\partial \\vec{y}_3}{\\partial \\vec{s}_2} \\dfrac{\\partial \\vec{s}_2}{\\partial \\vec{s}_1} \\dfrac{\\partial \\vec{s}_1}{\\partial W_x}
-            \\)
+        <h4>Update state weight matrix <MathJax>{"\\(W_x\\)"}</MathJax></h4>
+        <p> <MathJax>
+            {
+                "\\(\Delta W_x := \\dfrac{\\partial E_3}{\\partial W_x} = \\dfrac{\\partial E_3}{\\partial \\vec{y}_3}\\dfrac{\\partial \\vec{y}_3}{\\partial \\vec{s}_3} \\dfrac{\\partial \\vec{s}_3}{\\partial W_x} + \\dfrac{\\partial E_3}{\\partial \\vec{y}_3}\\dfrac{\\partial \\vec{y}_3}{\\partial \\vec{s}_3}\\dfrac{\\partial \\vec{s}_3}{\\partial \\vec{s}_2} \\dfrac{\\partial \\vec{s}_2}{\\partial W_x} +\\dfrac{\\partial E_3}{\\partial \\vec{y}_3}\\dfrac{\\partial \\vec{y}_3}{\\partial \\vec{s}_3}\\dfrac{\\partial \\vec{s}_3}{\\partial \\vec{s}_2} \\dfrac{\\partial \\vec{s}_2}{\\partial \\vec{s}_1} \\dfrac{\\partial \\vec{s}_1}{\\partial W_x}= \\dfrac{\\partial E_3}{\\partial \\vec{y}_3}\\dfrac{\\partial \\vec{y}_3}{\\partial \\vec{s}_3} \\dfrac{\\partial \\vec{s}_3}{\\partial W_x} + \\dfrac{\\partial E_3}{\\partial \\vec{y}_3}\\dfrac{\\partial \\vec{y}_3}{\\partial \\vec{s}_2} \\dfrac{\\partial \\vec{s}_2}{\\partial W_x} +\\dfrac{\\partial E_3}{\\partial \\vec{y}_3}\\dfrac{\\partial \\vec{y}_3}{\\partial \\vec{s}_2} \\dfrac{\\partial \\vec{s}_2}{\\partial \\vec{s}_1} \\dfrac{\\partial \\vec{s}_1}{\\partial W_x}\\)"
+            }
+        </MathJax>
+
         </p>
-        <p>\\(\Rightarrow\\) <b>General equation for updating \\(W_x\\): </b> \\(\\\)
-            \\(\\dfrac{\\partial E_N}{\\partial W_x} = \sum\limits_{i=1}^N \\dfrac{\\partial E_N}{\\partial \\vec{y}_N}\\dfrac{\\partial y_N}{\\partial \\vec{s}_i}\\dfrac{\\partial \\vec{s}_i}{\\partial W_x}\\)
+        <p><MathJax>{"\\(\Rightarrow\\)"}</MathJax> <b>General equation for updating <MathJax>{"\\(W_x\\)"}</MathJax>: </b> 
+        <MathJax>{
+        "\\(\\dfrac{\\partial E_N}{\\partial W_x} = \sum\limits_{i=1}^N \\dfrac{\\partial E_N}{\\partial \\vec{y}_N}\\dfrac{\\partial y_N}{\\partial \\vec{s}_i}\\dfrac{\\partial \\vec{s}_i}{\\partial W_x}\\)"
+        }
+        </MathJax>
         </p>
 
         <h3>On the Vanishing Gradient Problem</h3>
@@ -89,14 +96,21 @@ export default function SimpleRNN(){
         <p>
             The formula above show that for more than a small number of timesteps a lot of multiplications will have to be performed; if the multiplied values are big, the resulting gradient weight update will explode over time. To avoid an exploding gradient, so-called gradient clipping can be used, i.e.
             weight update at timestep 
-        \\(t: \delta = 
-        \begin{cases} 
-        \\dfrac{\\partial y}{\\partial W_{ij}} & \\dfrac{\\partial y}{\\partial W_{ij}} \leq threshold \\
-        \\dfrac{\\dfrac{\\partial y}{\\partial W_{ij}}}{\left\lVert \\dfrac{\\partial y}{\\partial W_{ij}} \right\rVert_2} & \\dfrac{\\partial y}{\\partial W_{ij}} > threshold 
-        \end{cases}\\)
+            <MathJax>
+                {
+                    "\\(t: \\delta = \begin{cases} \\dfrac{\\partial y}{\\partial W_{ij}} & \\dfrac{\\partial y}{\\partial W_{ij}} \leq threshold \\\\dfrac{\\dfrac{\\partial y}{\\partial W_{ij}}}{\left\lVert \\dfrac{\\partial y}{\\partial W_{ij}} \right\rVert_2} & \\dfrac{\\partial y}{\\partial W_{ij}} > threshold \end{cases}\\)"
+                }
+            </MathJax>
+
         </p>
 
-        <h2>Update rule for weight matrix \\(U\\) at timestep \\(t+1\\) over \\(2\\) timesteps</h2>
+        <h2>
+            <MathJax>
+                {
+                "Update rule for weight matrix \\(U\\) at timestep \\(t+1\\) over \\(2\\) timesteps"
+                }
+            </MathJax>
+        </h2>
         <img src="/images/deep-learning/2layer_folded_RNN.png" alt="example of two layer folded RNN model"/>
         <p>
             <MathJax>
