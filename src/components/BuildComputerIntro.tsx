@@ -2,7 +2,7 @@ import timerImage from "../assets/images/build_computer/IMG_6807.png";
 import breadboardcircuitImage from "../assets/images/build_computer/IMG_6743.png";
 import timerVideo from "../assets/videos/IMG_6742.mov";
 
-export default function BuildComputerIntro() {
+export default function BuildComputerIntro() : JSX.Element {
     return (
         <main>
             <h1> Introduction </h1>

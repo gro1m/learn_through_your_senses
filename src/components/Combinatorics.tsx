@@ -2,7 +2,7 @@ import { MathJax, MathJaxContext } from "better-react-mathjax";
 import withoutReplacementImage from "../assets/images/combinatorics/without_replacement.svg";
 import withReplacementImage from "../assets/images/combinatorics/unordered_with_replacement.svg";
 
-export default function Combinatorics() {
+export default function Combinatorics() : JSX.Element {
   const mathJaxConfig = {
     tex: {
       tags: "all",

@@ -6,7 +6,7 @@ import { COMBINATORICS_PATH } from '../routes/CombinatoricsRoutes';
 import { LSTM_PATH } from '../routes/LstmRoutes';
 import { SimpleRNNPATH } from '../routes/SimpleRNNRoutes';
 
-const Navbar = () => {
+const Navbar = () : JSX.Element => {
   return (
     <nav>
       <ul>
@@ -27,7 +27,7 @@ const Navbar = () => {
         </li>
         <li>
           <Link to={LSTM_PATH}>LSTM</Link>
-        </li>
+        </li> 
       </ul>
 
       {/* Additional Navbar Content */}

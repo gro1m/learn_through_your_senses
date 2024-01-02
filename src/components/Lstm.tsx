@@ -6,7 +6,7 @@ import gruImage from "../assets/images/deep-learning/GRU.png";
 import lstmprocess1Image from "../assets/images/deep-learning/charlstmprocess_1.png";
 import lstmprocess2Image from "../assets/images/deep-learning/charlstmprocess_1.png";
 
-export default function Lstm() {
+export default function Lstm() : JSX.Element {
   return (
     <>
       <h1>LSTM neuron</h1>

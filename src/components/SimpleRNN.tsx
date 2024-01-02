@@ -7,7 +7,7 @@ import bpttrnnImage from "../assets//images/deep-learning/bptt_rnn.png";
 import rnnneuronImage from "../assets/images/deep-learning/rnn_neuron.png";
 import twolayerrnnImage from "../assets/images/deep-learning/2layer_folded_RNN.png";
 
-export default function SimpleRNN() {
+export default function SimpleRNN() : JSX.Element {
   return (
     <>
       <h1>Simple RNN</h1>

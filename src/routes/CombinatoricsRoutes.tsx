@@ -1,10 +1,11 @@
+import React from 'react';
 import Combinatorics from '../components/Combinatorics';
 import { Route } from 'react-router-dom';
 
 export const COMBINATORICS_PATH="/combinatorics";
 
-const CombinatoricsRoutes = () => {
-  return <Route path={COMBINATORICS_PATH} Component={Combinatorics} />;
+const CombinatoricsRoutes = () : React.ReactElement => {
+  return <Route path={COMBINATORICS_PATH} element={<Combinatorics />} />;
 };
 
 export default CombinatoricsRoutes;
