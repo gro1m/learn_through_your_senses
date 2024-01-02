@@ -1,4 +1,4 @@
-function Index(){
+function Home(){
     return (
         <>
         <header>
@@ -17,4 +17,4 @@ function Index(){
     )
 }
 
-export default Index;
+export default Home;

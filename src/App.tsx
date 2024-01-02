@@ -1,26 +1,31 @@
-import './App.css'
+import "./App.css";
 import { MathJaxContext } from 'better-react-mathjax';
-import Index from './components/Index';
-import AboutMe from './components/AboutMe';
+import { BrowserRouter as Router, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import HomeRoutes from "./routes/HomeRoutes";
+import AboutMeRoutes from "./routes/AboutMeRoutes";
 
-import BuildComputerIntro from './components/BuildComputerIntro';
-import Combinatorics from './components/Combinatorics';
-import SimpleRNN from './components/SimpleRNN';
-import Lstm from './components/Lstm';
-
+import BuildComputerIntroRoutes from "./routes/BuildComputerIntroRoutes";
+import CombinatoricsRoutes from "./routes/CombinatoricsRoutes";
+import SimpleRNNRoutes from "./routes/SimpleRNNRoutes";
+import LstmRoutes from "./routes/LstmRoutes";
 
 function App() {
-
   return (
     <MathJaxContext>
-      <Index />
-      <AboutMe />
-      <BuildComputerIntro />
-      <Combinatorics />
-      <SimpleRNN />
-      <Lstm />
+      <Router>
+        <Navbar />
+        <Routes>
+          <HomeRoutes />
+          <AboutMeRoutes />
+          <BuildComputerIntroRoutes />
+          <CombinatoricsRoutes />
+          <SimpleRNNRoutes />
+          <LstmRoutes />
+        </Routes>
+      </Router>
     </MathJaxContext>
-  )
+  );
 }
 
-export default App
+export default App;
