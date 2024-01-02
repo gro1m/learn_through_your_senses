@@ -20,7 +20,7 @@ const Navbar = () : JSX.Element => {
           <Link to={BUILDCOMPUTERINTRO_PATH}>Build Computer Intro</Link>
         </li>
         <li>
-          <Link to={COMBINATORICS_PATH}>Home</Link>
+          <Link to={COMBINATORICS_PATH}>Combinatorics</Link>
         </li>
         <li>
           <Link to={SimpleRNNPATH}>Simple RNN</Link>
