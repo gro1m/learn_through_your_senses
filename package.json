@@ -10,6 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.3",
+    "@mui/material": "^5.15.3",
+    "@types/material-ui": "^0.21.16",
     "@types/mathjax": "^0.0.40",
     "@types/react-router-dom": "^5.3.3",
     "better-react-mathjax": "^2.0.3",

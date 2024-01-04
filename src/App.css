@@ -40,3 +40,10 @@
 .read-the-docs {
   color: #888;
 }
+
+.link {
+  text-decoration: none;
+  color: white;
+  font-size: "20px";
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
