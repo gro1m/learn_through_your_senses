@@ -8,6 +8,12 @@ export default function Combinatorics() : JSX.Element {
       tags: "all",
     },
   };
+  const tableStyle = {
+    border: '1px solid black',
+    cellpadding: '5px',
+    cellspacing: '5px',
+    // Add other styles as needed
+  };
   return (
     <MathJaxContext version={3} config={mathJaxConfig}>
       <div className="grid">
@@ -16,7 +22,7 @@ export default function Combinatorics() : JSX.Element {
             <h1>Introduction to drawing marbles</h1>
             <p>
               Intro Text
-              <table border="1" cellpadding="5" cellspacing="5">
+              <table style={tableStyle}>
                 <caption> Formulas </caption>
                 <tr>
                   <td></td>
