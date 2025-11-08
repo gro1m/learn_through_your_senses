@@ -1,33 +1,17 @@
-// Imports
-const express = require('express');
-const ejsMate = require('ejs-mate');
-const path = require('path');
+import express from "express";
+import path from "path";
 
-// Import Routes
-const computerRoutes = require('./routes/computer');
-const mainRoutes = require('./routes/main');
-const mathRoutes = require('./routes/math');
-const mlRoutes = require('./routes/machine_learning');
-
-// App Configuration
 const app = express();
+const PORT = process.env.PORT || 3000;
 
-// Set Templating Engine and Views Directory
-app.engine('ejs', ejsMate);
+// Serve React build
+app.use(express.static(path.join(__dirname, "dist")));
 
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
+// All routes go to React for client-side routing
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "dist", "index.html"));
+});
 
-app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, 'public')))
-
-// Routes
-app.use('/', mainRoutes);
-app.use('/', computerRoutes);
-app.use('/', mathRoutes);
-app.use('/', mlRoutes);
-
-// Listen on port 3000
-app.listen(3000, () => {
-    console.log('Serving on port 3000');
-})
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
+});

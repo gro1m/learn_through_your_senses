@@ -1,10 +1,4 @@
 import { Link } from "react-router-dom";
-import { HOME_PATH } from "../routes/HomeRoutes";
-import { ABOUTME_PATH } from "../routes/AboutMeRoutes";
-import { BUILDCOMPUTERINTRO_PATH } from "../routes/BuildComputerIntroRoutes";
-import { COMBINATORICS_PATH } from "../routes/CombinatoricsRoutes";
-import { LSTM_PATH } from "../routes/LstmRoutes";
-import { SimpleRNNPATH } from "../routes/SimpleRNNRoutes";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -12,7 +6,27 @@ import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 
+import {
+  HOME_PATH,
+  ABOUTME_PATH,
+  BUILDCOMPUTERINTRO_PATH,
+  COMBINATORICS_PATH,
+  LSTM_PATH,
+  SimpleRNNPATH,
+  DOGBREEDDEMO_PATH,
+} from "../AppRoutes";
+
 const Navbar = (): JSX.Element => {
+  const links = [
+    { path: HOME_PATH, label: "Home" },
+    { path: ABOUTME_PATH, label: "About" },
+    { path: BUILDCOMPUTERINTRO_PATH, label: "Build Computer Intro" },
+    { path: COMBINATORICS_PATH, label: "Combinatorics" },
+    { path: SimpleRNNPATH, label: "Simple RNN" },
+    { path: LSTM_PATH, label: "LSTM" },
+    { path: DOGBREEDDEMO_PATH, label: "Dog Breed Demo" },
+  ];
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
@@ -27,12 +41,11 @@ const Navbar = (): JSX.Element => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            <Link to={HOME_PATH} className="link">Home</Link>
-            <Link to={ABOUTME_PATH} className="link">About</Link>
-            <Link to={BUILDCOMPUTERINTRO_PATH} className="link">Build Computer Intro</Link>
-            <Link to={COMBINATORICS_PATH} className="link">Combinatorics</Link>
-            <Link to={SimpleRNNPATH} className="link">Simple RNN</Link>
-            <Link to={LSTM_PATH} className="link">LSTM</Link>
+            {links.map((link) => (
+              <Link key={link.path} to={link.path} className="link" style={{ marginRight: "1rem", color: "inherit", textDecoration: "none" }}>
+                {link.label}
+              </Link>
+            ))}
           </Typography>
         </Toolbar>
       </AppBar>
