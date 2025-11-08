@@ -1,4 +1,3 @@
-import React from "react";
 import demoThumbnail from "../assets/images/example.png"; // small preview image
 
 const HUGGINGFACE_URL = "https://huggingface.co/spaces/mg/dog-breed-classifier";
